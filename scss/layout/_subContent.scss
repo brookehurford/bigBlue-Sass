@@ -1,0 +1,51 @@
+.subContent1, .subContent2{
+  width: 100%;
+  margin-top: 18px;
+  overflow: auto;
+  background-color: white;
+  padding: 1em;
+}
+
+.subContent1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #00BCD4;
+}
+
+.subContent2 {
+  background-color: #00BCD4;
+}
+
+.mobileHeading {
+  display: none;
+}
+
+.sub1Text {
+  position: relative;
+  top: 35%;
+}
+
+.subContent1 p {
+  font-size: 12px;
+}
+
+.subContent1 h2 {
+  font-family: 'Patua One', cursive;
+  letter-spacing: 1.5px;
+}
+
+/* Sub Content 2 */
+
+.subContent2 img {
+  display: none;
+}
+
+.subContent2 p {
+  font-size: 14px;
+  letter-spacing: .2px;
+  line-height: 18px;
+  position: relative;
+  top: 16%;
+  max-width: 90%;
+  margin: 0 auto;
+}

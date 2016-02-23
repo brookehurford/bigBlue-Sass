@@ -1,0 +1,203 @@
+
+
+/* MEDIA QUERIES
+======================*/
+
+@media only screen and (max-width: 618px) {
+  .header .black {
+    display: none;
+  }
+
+  .header .white {
+    width: 100%;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .locationMobile {
+    margin: 1.4em 0px;
+  }
+
+  .locationMobile p {
+    color: black;
+    font-size: 18px;
+    line-height: 5px;
+  }
+
+  .locationMobile p:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .subContent1 {
+    min-height: 0px;
+    height: 6vh;
+    overflow: hidden;
+    padding-top: .7em;
+  }
+
+  .mobileHeading {
+    display: block;
+    text-align: left;
+  }
+
+  .mobileHeading img {
+    margin-top: 8px;
+    float: left;
+    max-height: 20px;
+  }
+
+  .mobileHeading p {
+    float: left;
+  }
+
+  .sub1Text {
+    display: none;
+  }
+
+  .subContent2 {
+    min-height: 0px;
+    height: 18vh;
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 619px) {
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .header {
+    position: absolute;
+    width: 200px;
+    top: 5%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+  }
+
+  .header img {
+    margin: 0 2em;
+    min-width: 75px;
+  }
+
+  .header .black {
+    display: block;
+  }
+
+  .header .white {
+    display: none;
+  }
+
+  nav {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav ul {
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  nav li {
+    float: none;
+    font-size: 13px;
+    text-align: left;
+    margin: .5em;
+  }
+
+  .mainContent {
+    height: 64.6vh;
+  }
+
+  .location {
+    top: 85%;
+  }
+
+  .locationMobile {
+    display: none;
+  }
+
+  .subContent1 {
+    float: left;
+    width: 49%;
+    height: 33.8vh;
+  }
+
+  .sub1Text p {
+    font-size: 14px;
+  }
+
+  .sub1Text h2 {
+    font-size: 26px;
+  }
+
+  .subContent2 {
+    float: right;
+    width: 49%;
+    height: 33.8vh;
+  }
+
+  .subContent2 img {
+    position: relative;
+    top: 10%;
+    left: 4%;
+    display: block;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+  }
+
+  .subContent2 p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+
+  .mainContent {
+    float: left;
+    width: 70%;
+    height: 100vh;
+    display: block;
+  }
+
+  .subContent {
+    float: right;
+    width: 30%;
+    padding: 0 0 0 15px;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .subContent1 {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .sub1Text p {
+    font-size: 16px;
+  }
+
+  .sub1Text h2 {
+    font-size: 30px;
+  }
+
+  .subContent2 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .subContent2 p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

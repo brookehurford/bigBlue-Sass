@@ -1,0 +1,119 @@
+nav {
+  overflow: auto;
+  clear: both; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0px; }
+
+body {
+  background-color: white;
+  font-family: "Arimo", sans-serif;
+  color: #fff; }
+
+nav {
+  background-color: #EEEEEE;
+  padding: .8em 0; }
+  nav ul {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 0 auto; }
+  nav li {
+    float: left;
+    margin-right: .8em;
+    font-size: 12px;
+    color: #616161;
+    text-transform: uppercase; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto; }
+
+.mainContent {
+  background-image: url("../img/kohtao.jpg");
+  height: 40vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.header {
+  background-color: #00BCD4;
+  margin-top: 1em; }
+
+.header .black {
+  display: none; }
+
+.header img {
+  max-width: 30%;
+  display: block;
+  padding: .7em 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.location {
+  position: relative;
+  top: 75%;
+  left: 14%; }
+
+.location p {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 18px;
+  line-height: 5px;
+  letter-spacing: 1px; }
+
+.location p:nth-child(2) {
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 14px; }
+
+.subContent1, .subContent2 {
+  width: 100%;
+  margin-top: 18px;
+  overflow: auto;
+  background-color: white;
+  padding: 1em; }
+
+.subContent1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #00BCD4; }
+
+.subContent2 {
+  background-color: #00BCD4; }
+
+.mobileHeading {
+  display: none; }
+
+.sub1Text {
+  position: relative;
+  top: 35%; }
+
+.subContent1 p {
+  font-size: 12px; }
+
+.subContent1 h2 {
+  font-family: 'Patua One', cursive;
+  letter-spacing: 1.5px; }
+
+/* Sub Content 2 */
+.subContent2 img {
+  display: none; }
+
+.subContent2 p {
+  font-size: 14px;
+  letter-spacing: .2px;
+  line-height: 18px;
+  position: relative;
+  top: 16%;
+  max-width: 90%;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=application.css.map */

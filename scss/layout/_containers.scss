@@ -1,0 +1,12 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.mainContent {
+  background-image: url("#{$imagePath}/kohtao.jpg");
+  height: 40vh;
+  background-size: cover;
+  overflow: hidden;
+}
