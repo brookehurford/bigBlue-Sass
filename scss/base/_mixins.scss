@@ -1,0 +1,5 @@
+@mixin textFormat($color, $fontSize, $lineHeight: 5px) {
+  color: $color;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}

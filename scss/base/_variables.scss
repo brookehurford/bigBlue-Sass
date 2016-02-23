@@ -6,6 +6,15 @@ $aqua: #00BCD4;
 
 // Font
 $arimoFont: 'Arimo', sans-serif;
+$patuaFont: 'Patua One', cursive;
+$base-fontSize: 12px;
+
+// Measurements
+$full-width: 100%;
 
 // File Paths
-$imagePath: "../img"
+$imagePath: "../img";
+
+// Media queries
+$mobile: '(max-width: 618px)';
+$tablet: '(min-width: 619px)';

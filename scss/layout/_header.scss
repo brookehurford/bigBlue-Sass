@@ -1,37 +1,47 @@
+// Logo and Header
+
 .header {
   background-color: $aqua;
   margin-top: 1em;
+  img {
+    @extend %centerBlock;
+    max-width: 30%;
+    padding: .7em 0;
+  }
 }
 
 .header .black {
   display: none;
 }
 
-.header img {
-  max-width: 30%;
-  display: block;
-  padding: .7em 0;
-  margin-left: auto;
-  margin-right: auto;
+// Location text for mobile and desktop
+
+.locationMobile {
+  margin: 1.4em 0px;
+  p {
+    @include textFormat(black, 18px, 5px);
+    &:nth-child(2) {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
 }
 
 .location {
+  @media only screen and #{$mobile} {
+    display: none;
+  }
   position: relative;
   top: 75%;
   left: 14%;
-}
-
-.location p {
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  font-size: 18px;
-  line-height: 5px;
-  letter-spacing: 1px;
-}
-
-.location p:nth-child(2) {
-  text-transform: uppercase;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  font-size: 14px;
+  p {
+    @include textFormat($white, 18px, 5px);
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 1px;
+    &:nth-child(2) {
+      @include textFormat($white, 14px);
+      text-transform: uppercase;
+      text-shadow: 2px 2px 2px black;
+    }
+  }
 }

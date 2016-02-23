@@ -1,51 +1,66 @@
-.subContent1, .subContent2{
-  width: 100%;
-  margin-top: 18px;
-  overflow: auto;
-  background-color: white;
-  padding: 1em;
-}
+// Sub Content Containers
 
 .subContent1 {
-  text-align: center;
+  @extend %subContent-container;
+  @extend %centeredText;
   text-transform: uppercase;
-  background-color: #00BCD4;
+  background-color: $aqua;
+  @media screen only and #{$mobile} {
+    min-height: 0px;
+    height: 6vh;
+    overflow: hidden;
+    padding-top: .7em;
+  }
 }
 
 .subContent2 {
-  background-color: #00BCD4;
+  @extend %subContent-container;
+  background-color: $aqua;
 }
 
-.mobileHeading {
-  display: none;
+// Sub Content 1 Text and Images
+
+.sub1mobile {
+  display: block;
+  text-align: left;
+  img {
+    margin-top: 8px;
+    float: left;
+    max-height: 20px;
+  }
+  p {
+    float: left;
+    font-size: $base-fontSize;
+  }
 }
 
 .sub1Text {
-  position: relative;
-  top: 35%;
-}
-
-.subContent1 p {
-  font-size: 12px;
-}
-
-.subContent1 h2 {
-  font-family: 'Patua One', cursive;
-  letter-spacing: 1.5px;
-}
-
-/* Sub Content 2 */
-
-.subContent2 img {
   display: none;
+  @media screen only and #{$tablet} {
+    position: relative;
+    top: 35%;
+    p {
+      font-size: $base-fontSize;
+    }
+    h2 {
+      font-family: $patuaFont;
+      letter-spacing: 1.5px;
+    }
+  }
 }
 
-.subContent2 p {
-  font-size: 14px;
-  letter-spacing: .2px;
-  line-height: 18px;
-  position: relative;
-  top: 16%;
-  max-width: 90%;
-  margin: 0 auto;
+// Sub Content 1 Text and Images
+
+.subContent2 {
+  img {
+    display: none;
+  }
+  p {
+    @include textFormat(white, 14px, 18px);
+    letter-spacing: .2px;
+    position: relative;
+    top: 16%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
