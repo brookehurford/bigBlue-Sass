@@ -2,6 +2,9 @@
   width: 90%;
   margin: 0 auto;
   overflow: auto;
+  @media only screen and #{$tablet} {
+    width: $full-width;
+  }
 }
 
 .mainContent {
@@ -9,4 +12,7 @@
   height: 40vh;
   background-size: cover;
   overflow: hidden;
+  @media only screen and #{$tablet} {
+    height: 64.6vh;
+  }
 }

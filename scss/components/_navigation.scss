@@ -2,10 +2,18 @@ nav {
   @extend %clearfix;
   background-color: $lightGrey;
   padding: .8em 0;
+  @media only screen and #{$tablet} {
+    background-color: transparent;
+    padding: 0;
+  }
   ul {
     list-style: none;
     padding-left: 1.2em;
     margin: 0 auto;
+    @media only screen and #{$tablet} {
+      padding-left: 1.5em;
+      padding-bottom: 1em;
+    }
   }
   li {
     float: left;
@@ -13,5 +21,11 @@ nav {
     font-size: 12px;
     color: $darkGrey;
     text-transform: uppercase;
+    @media only screen and #{$tablet} {
+      float: none;
+      font-size: 13px;
+      text-align: left;
+      margin: .5em;
+    }
   }
 }

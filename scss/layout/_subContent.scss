@@ -5,17 +5,36 @@
   @extend %centeredText;
   text-transform: uppercase;
   background-color: $aqua;
-  @media screen only and #{$mobile} {
+  @media only screen and #{$mobile} {
     min-height: 0px;
-    height: 6vh;
     overflow: hidden;
+    height: 6vh;
     padding-top: .7em;
+    width: $full-width;
+  }
+  @media only screen and #{$tablet} {
+    float: left;
+    width: 49%;
+    height: 33.8vh;
   }
 }
+
+
 
 .subContent2 {
   @extend %subContent-container;
   background-color: $aqua;
+  @media only screen and #{$mobile} {
+    min-height: 0px;
+    overflow: hidden;
+    height: 18vh;
+    padding-bottom: 40px;
+  }
+  @media only screen and #{$tablet} {
+    float: left;
+    width: 49%;
+    height: 33.8vh;
+  }
 }
 
 // Sub Content 1 Text and Images
@@ -35,17 +54,21 @@
 }
 
 .sub1Text {
-  display: none;
-  @media screen only and #{$tablet} {
-    position: relative;
-    top: 35%;
-    p {
-      font-size: $base-fontSize;
+  display: block;
+  position: relative;
+  top: 35%;
+  p {
+    font-size: $base-fontSize;
+    @media only screen and #{$tablet} {
+      font-size: $base-fontSize + 2px;
     }
-    h2 {
-      font-family: $patuaFont;
-      letter-spacing: 1.5px;
-    }
+  }
+  h2 {
+    font-family: $patuaFont;
+    letter-spacing: 1.5px;
+  }
+  @media screen only and #{$mobile} {
+    display: none;
   }
 }
 

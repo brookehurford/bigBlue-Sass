@@ -3,100 +3,13 @@
 /* MEDIA QUERIES
 ======================*/
 
-@media only screen and (max-width: 618px) {
-  .header .black {
-    display: none;
-  }
-
-  .header .white {
-    width: 100%;
-  }
-
-
-  .subContent2 {
-    min-height: 0px;
-    height: 18vh;
-    padding-bottom: 40px;
-    overflow: hidden;
-  }
-
-}
 
 @media only screen and (min-width: 619px) {
 
-  .wrapper {
-    width: 100%;
-  }
 
-  .header {
-    position: absolute;
-    width: 200px;
-    top: 5%;
-    left: 10%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1em;
-  }
-
-  .header img {
-    margin: 0 2em;
-    min-width: 75px;
-  }
-
-  .header .black {
-    display: block;
-  }
-
-  .header .white {
-    display: none;
-  }
-
-  nav {
-    background-color: transparent;
-    padding: 0;
-  }
-
-  nav ul {
-    padding-left: 1.5em;
-    padding-bottom: 1em;
-  }
-
-  nav li {
-    float: none;
-    font-size: 13px;
-    text-align: left;
-    margin: .5em;
-  }
-
-  .mainContent {
-    height: 64.6vh;
-  }
-
-  .location {
-    top: 85%;
-  }
-
-  .locationMobile {
-    display: none;
-  }
-
-  .subContent1 {
-    float: left;
-    width: 49%;
-    height: 33.8vh;
-  }
-
-  .sub1Text p {
-    font-size: 14px;
-  }
 
   .sub1Text h2 {
     font-size: 26px;
-  }
-
-  .subContent2 {
-    float: right;
-    width: 49%;
-    height: 33.8vh;
   }
 
   .subContent2 img {
